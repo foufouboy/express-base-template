@@ -13,4 +13,5 @@ This rep will be updated regularly to better fit my needs.
 - Pug
 - Express
 - PostgreSQL
+- Prisma ORM
 - NodeJS
