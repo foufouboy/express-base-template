@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 // VIEWS
 
@@ -16,7 +16,10 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res, next) => {
-    res.render("pages/home");
+	res.json({
+		status: "400",
+		message: "Back-end running smoothly!",
+	});
 });
 
 // ROUTES
